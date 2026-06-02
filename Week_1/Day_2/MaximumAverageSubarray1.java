@@ -5,12 +5,12 @@ class Solution {
         for(int i=0;i<k;i++) {
             sum += nums[i];
         }
-        int maxSum=sum;
+        int maximumSum=sum;
         // Sliding window
         for(int i=k;i<nums.length;i++) {
             sum = sum - nums[i-k] + nums[i];
-            maxSum = Math.max(maxSum, sum);
+            maxSum = Math.max(maximumSum, sum);
         }
-        return (double) maxSum / k;
+        return (double) maximumSum / k;
     }
 }
