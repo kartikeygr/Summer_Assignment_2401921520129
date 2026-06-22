@@ -1,0 +1,19 @@
+class Solution {
+
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        // both null
+        if(p==null && q==null){
+            return true;
+        }
+        // one null
+        if(p==null || q==null){
+            return false;
+        }
+        // values different
+        if(p.val != q.val){
+            return false;
+        }
+        // check left and right subtree
+        return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+    }
+}
