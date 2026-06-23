@@ -1,5 +1,4 @@
 class Solution {
-
     public TreeNode invertTree(TreeNode root) {
         // base case
         if(root==null) {
