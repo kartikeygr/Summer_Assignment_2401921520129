@@ -1,5 +1,4 @@
 class Solution {
-
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> output = new ArrayList<>();
         inorder(root,output);
